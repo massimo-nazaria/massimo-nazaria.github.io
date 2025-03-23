@@ -1,0 +1,20 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8" ?>
+  <rss version="2.0">
+  <channel>
+    <title>{{ site.title | xml_escape }}</title>
+    <link>{{ site.url }}</link>
+    <description>{{ site.description }}</description>
+    <language>en-us</language>
+{% assign posts = site.posts | sort: "date" | reverse %}
+{% for post in posts limit: 20 %}
+    <item>
+      <title>{{ post.title | smartify | strip_html | normalize_whitespace | xml_escape }}</title>
+      <link>{{ post.url | absolute_url }}</link>
+      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+    </item>
+{% endfor %}
+  </channel>
+</rss>

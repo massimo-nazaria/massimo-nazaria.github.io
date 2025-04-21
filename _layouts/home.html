@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<div class="container mt-5 mb-0">
+  <div class="row justify-content-center">
+    <div class="col-sm-8">
+      <h1 class="d-none">Blog Index</h1>
+    </div>
+  </div>
+{%- if site.posts.size > 0 -%}
+  {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+  {%- for post in site.posts -%}
+  <div class="row justify-content-center">
+    <div class="col-sm-8">
+      <p class="text-muted mb-0">{{ post.date | date: date_format }}</p>
+      <p class="lead post-index"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></p>
+      {% if forloop.last %}
+      <hr>
+      {% endif %}
+    </div>
+  </div>
+  {%- endfor -%}
+{%- endif -%}
+</div>

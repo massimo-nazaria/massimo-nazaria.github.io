@@ -1,0 +1,18 @@
+nav {
+  text-transform: uppercase;
+}
+nav .navbar-brand {
+  margin: 0;
+  padding: 0;
+  font-size: x-large;
+}
+nav .active > a {
+  font-weight: bold;
+}
+.rss {
+  color: #fff;
+  background-color: #ee802f;
+}
+.post-index {
+  font-size: xx-large;
+}

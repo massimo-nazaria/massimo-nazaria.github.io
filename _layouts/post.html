@@ -1,0 +1,15 @@
+---
+layout: default
+---
+  <main>
+    <hgroup>
+      <h1>{{ page.title | escape }}</h1>
+{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <p class="small">{{ page.date | date: date_format }}</p>
+    </hgroup>
+
+{{ content }}
+    <p style="margin-top: 3rem;">
+      <a href="{{ "./" | relative_url }}" role="button"><span class="fas fa-arrow-left"></span> Back to Home</a>
+    </p>
+  </main>

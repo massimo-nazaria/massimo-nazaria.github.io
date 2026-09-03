@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../webfonts/fontello.woff2?23747617') format('woff2'),
+       url('../webfonts/fontello.woff?23747617') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.fa:before, .fas:before, .fab:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-arrow-left:before { content: '\e800'; }
+.fa-book:before { content: '\e801'; }
+.fa-download:before { content: '\e802'; }
+.fa-envelope:before { content: '\e803'; }
+.fa-github:before { content: '\e804'; }
+.fa-linkedin:before { content: '\e805'; }
+.fa-orcid:before { content: '\e806'; }
+.fa-python:before { content: '\e807'; }
+.fa-rss:before { content: '\e808'; }

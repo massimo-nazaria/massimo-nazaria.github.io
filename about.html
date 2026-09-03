@@ -1,0 +1,127 @@
+---
+layout: null
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Massimo Nazaria - About</title>
+
+  <meta name="author" content="Massimo Nazaria">
+  <meta name="description" content="About page with personal introduction, contact information, curriculum vitae, and research work.">
+
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="./site.webmanifest">
+
+  <link type="application/atom+xml" rel="alternate" href="{{ './feed.xml' | absolute_url }}">
+
+  <link rel="stylesheet" href="./css/pico.min.css">
+  <link rel="stylesheet" href="./css/fontello.min.css">
+  <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1><a href="./" class="nav-title">Massimo Nazaria</a></h1>
+      <ul>
+        <li><a href="./">Blog</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <p class="big primary">Ciao! &#128075; I’m Massimo.</p>
+
+    <p>I’m a high school teacher and computer scientist based in Italy.</p>
+    <p>I hold a PhD and an MSc <em>cum Laude</em> in Computer Science from Sapienza University of Rome, focused on formal verification and critical systems design.</p>
+    <p>I’m passionate about learning new technologies, exploring modern programming paradigms, and having fun building side projects.</p>
+    <p>On this blog, I share insights on software design and programming from over a decade of work across research and industry.</p>
+    <p>I hope you like the blog! And if you have any questions, want to say hello, or want to collaborate, <a href="mailto:{{ site.email | encode_email }}">feel free</a> to reach out!</p>
+
+    <p style="margin-top: 1.5rem;">
+      <ul class="inline-list">
+        <li>
+          <a role="button" href="mailto:{{ site.email | encode_email }}" target="_blank"><span class="fa fa-envelope"></span> Email</a>
+        </li>
+        <li>
+          <a role="button" class="outline" href="Massimo-Nazaria-CV.pdf" target="_blank" title="Download CV"><span class="fas fa-download"></span> Curriculum Vitae</a>
+        </li>
+        <li>
+          <a role="button" class="outline" href="https://www.linkedin.com/in/massimo-nazaria/" target="_blank"><span class="fab fa-linkedin"></span> LinkedIn</a>
+        </li>
+      </ul>
+    </p>
+
+    <h2>Research Work</h2>
+
+    <p>
+      <ul class="inline-list">
+        <li>
+          <a role="button" class="bigger" href="https://scholar.google.com/citations?hl=en&user=QADKtLEAAAAJ" target="_blank" title="Google Scholar Profile"><span class="fas fa-book"></span> Publications</a>
+        </li>
+        <li>
+          <a role="button" class="bigger outline" href="https://orcid.org/0000-0002-7451-7833" target="_blank" title="ORCID Profile"><span class="fab fa-orcid"></span> ORCID</a>
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <h3 class="smaller">Predicting the Accuracy of Earthquake Magnitude Estimates with an LSTM Neural Network</h3>
+
+    <p class="small">This work presents an ambitious neural network aimed at predicting the accuracy of magnitude estimates computed shortly after an earthquake occurs. Machine learning in seismology has been regaining momentum in the past few years due to the increasing availability of seismic datasets. But the complex and heterogeneous nature of earthquakes still represents the main obstacle to a wider adoption of machine learning. The available datasets often turn out not to be appropriate for the automatic training of neural networks. Despite being just a preliminary study, the results demonstrate that machine learning is a viable approach to the problem at hand.</p>
+
+    <p>
+      <ul class="inline-list">
+        <li>
+          <a role="button" class="small outline" href="https://arxiv.org/abs/2104.05712" target="_blank" title="Download Paper"><span class="fas fa-book"></span> Paper</a>
+        </li>
+        <li>
+          <a role="button" class="small outline" href="https://github.com/massimo-nazaria/lstm" target="_blank" title="Code Repository"><span class="fab fa-python"></span> Code</a>
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <h3 class="smaller">Simulation Based Formal Verification of Cyber-Physical Systems</h3>
+    <p class="small">Cyber-physical systems in critical domains like smart grids and transportation require Simulation-Based Formal Verification (SBFV) to prevent serious, expensive, sometimes fatal failures. However, SBFV is an extremely time-consuming process. In fact, current tools fail at optimizing verification campaigns from existing datasets (e.g. removing redundant simulation scenario prefixes). Moreover, they cannot accurately predict execution times, which makes verification scheduling highly problematic. This work is aimed at overcoming these limitations by introducing a data-intensive verification campaign optimizer and an accurate execution time estimator.</p>
+
+    <p>
+      <ul class="inline-list">
+        <li>
+          <a role="button" class="small outline" href="https://arxiv.org/pdf/1905.04780.pdf" target="_blank" title="Download PhD Thesis"><span class="fas fa-download"></span> PhD Thesis</a></p>
+        </li>
+      </ul>
+    </p>
+
+    <p style="margin-top: 3rem;">
+      <a href="index.html" role="button"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </p>
+  </main>
+
+  <footer class="muted smaller">
+    <hr>
+
+    <p>&copy; {{ 'now' | date: "%Y" }} Massimo Nazaria</p>
+
+    <p>Licensed under a Creative Commons <a href="http://creativecommons.org/licenses/by-nc/4.0/">Attribution-NonCommercial 4.0</a> International License.</p>
+
+    <p>
+      <ul class="inline-list">
+        <li><a href="{{ 'feed.xml' | relative_url }}"><span class="fas fa-rss" title="RSS Feed" target="_blank"></span> RSS</a></li>
+        <li><a href="https://github.com/massimo-nazaria" title="Code Repository" target="_blank"><span class="fab fa-github"></span> GitHub</a></li>
+      </ul>
+    </p>
+
+  </footer>
+
+</body>
+</html>

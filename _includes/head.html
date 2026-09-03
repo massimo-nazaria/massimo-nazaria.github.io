@@ -1,0 +1,25 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+{% if page.title %}
+  <title>{{page.title}}</title>
+{% else %}
+  <title>{{site.title}}</title>
+{% endif %}
+  <meta name="author" content="{{site.author}}">
+  <meta name="description" content="{{site.description}}">
+
+  <link rel="icon" type="image/x-icon" href="{{ './favicon.ico' | relative_url }}">
+  <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="{{ './apple-touch-icon.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ './favicon-32x32.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ './favicon-16x16.png' | relative_url }}">
+  <link rel="manifest" href="{{ './site.webmanifest' | relative_url }}">
+
+  <link type="application/atom+xml" rel="alternate" href="{{ './feed.xml' | absolute_url }}">
+
+  <link rel="stylesheet" href="{{ './css/pico.min.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ './css/fontello.min.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ './css/highlight.min.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ './css/main.min.css' | relative_url }}">
+</head>

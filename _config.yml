@@ -1,0 +1,17 @@
+title: Massimo Nazaria - Blog
+email: massimo.nazaria@gmail.com
+author: Massimo Nazaria
+description: >- # this means to ignore newlines until "baseurl:"
+  Blog about software design and programming best practices plus random stuff I find interesting.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://massimo-nazaria.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Blog Post URL
+permalink: /:title:output_ext
+
+# Build settings
+markdown: kramdown
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-email-protect
